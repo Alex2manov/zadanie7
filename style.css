@@ -1,0 +1,21 @@
+body {
+    background: #87fadd;
+}
+.content {
+    margin: auto;
+    padding: 50px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+.slider {
+    display: flex;
+}
+.slide {
+    width: 800px;
+    height: 200px;
+}
+.slide img {
+    width: 90%;
+    height: 90%;
+       }
