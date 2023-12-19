@@ -2,43 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
     <link rel="stylesheet" href="style.css">
-    <title>Задание 7</title>
+    <title>Задание 8</title>
 </head>
 <body>
-      <div class="content">
-        <div class="slider galery">
-            <div class="slide">
-                <img src="1.jpg" alt="1">
-            </div>
-            <div class="slide">
-                <img src="2.jpg" alt="2">
-            </div>
-            <div class="slide">
-                <img src="3.jpg" alt="3">
-            </div>
-            <div class="slide">
-                <img src="4.jpg" alt="4">
-            </div>
-            <div class="slide">
-                <img src="5.jpg" alt="5">
-            </div>
-            <div class="slide">
-                <img src="6.jpg" alt="6">
-            </div>
-            <div class="slide">
-                <img src="7.jpg" alt="7">
-            </div>
-            <div class="slide">
-                <img src="8.jpg" alt="8">
-            </div>
-        </div>
+  <button id="openPopupButton">Открыть форму</button>
+  <div id="popup" class="popup">
+    <div class="popup-ner">
+      <h2>Форма обратной связи</h2>
+      <form id="feedbackForm">
+        <label for="fullName">ФИО</label>
+        <input type="text" id="fullName" name="fullName" required>
+          <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+          <label for="phone">Телефон</label>
+        <input type="number" id="tel" name="phone" required>
+          <label for="organization">Организация</label>
+        <input type="text" id="organization" name="organization" required>
+          <label for="message">Сообщение</label>
+        <textarea id="message" name="message" required></textarea>
+          <label for="agreement">
+          <input type="checkbox" id="agreement" name="agreement" required>
+          Я согласен с политикой обработки персональных данных
+        </label>
+          <button type="submit">Отправить</button>
+      </form>
     </div>
-    <script src="info.js"></script>
+  </div>
+    <div id="sucmes" class="message"></div>
+  <div id="ermes" class="message"></div>  
+    <script defer src="info.js"></script>
 </body>
 </html>
